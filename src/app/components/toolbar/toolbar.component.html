@@ -1,0 +1,46 @@
+<!--
+  Copyright (C) 2016-2017 by Teradata Corporation. All rights reserved.
+  TERADATA CORPORATION CONFIDENTIAL AND TRADE SECRET
+-->
+<div layout="row" layout-align="end center" flex>
+  <nav
+    hide-xs
+    hide-sm
+    class="text-upper text-sm docs-nav push-left-lg push-right-xxl"
+    layout="row"
+  >
+  <a
+  class="push-right-md text-nodecoration"
+  [routerLink]="['/designer']"
+  [routerLinkActive]="['active']"
+  >
+    Designer
+  </a>
+
+    <a
+      class="push-right-md text-nodecoration"
+      [routerLink]="['/monitor']"
+      [routerLinkActive]="['active']"
+      >Monitor</a
+    >
+
+    <a
+      class="push-right-md text-nodecoration"
+      [routerLink]="['/reports']"
+      [routerLinkActive]="['active']"
+      >Reports</a
+    >
+    <a
+      class="push-right-md text-nodecoration"
+      [routerLink]="['/utilities']"
+      [routerLinkActive]="['active']"
+    >
+      Utilities
+    </a>
+  </nav>
+  
+  <div layout="row" layout-align="end center">
+    <mat-icon svgIcon="assets:diy"></mat-icon>
+  </div>
+
+</div>

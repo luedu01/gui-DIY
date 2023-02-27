@@ -1,0 +1,36 @@
+<td-layout #layout [class]="activeTheme" [dir]="dir">
+  <td-navigation-drawer
+    sidenavTitle="Do it yourself"
+    [logo]="activeTheme === 'theme-dark' ? 'teradata' : 'teradata-dark'"
+    navigationRoute="/"
+    flex
+  >
+    <app-sidenav-content></app-sidenav-content>
+  </td-navigation-drawer>
+  <td-layout-nav>
+    <div
+      td-toolbar-content
+      layout="row"
+      layout-align="space-between center"
+      flex
+    >
+      <button mat-icon-button td-menu-button tdLayoutToggle hide-gt-sm>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-icon
+        hide-xs
+        [routerLink]="['/']"
+        class="mat-icon-logo cursor-pointer"
+        svgIcon="assets:teradata"
+      ></mat-icon>
+      <span
+        [routerLink]="['/']"
+        class="cursor-pointer"
+        [style.textTransform]="'capitalize'"
+        >Do it yourself</span
+      >
+      <td-toolbar flex layout="row"></td-toolbar>
+    </div>
+    <router-outlet></router-outlet>
+  </td-layout-nav>
+</td-layout>
